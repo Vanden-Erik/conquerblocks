@@ -9,7 +9,20 @@ calendar = {
     "Sabado": [],
     "Domingo": [],
 }
-daycnt = 0
 
-for D in ventas:
-    
+while len(ventas) > 0:
+    for d in calendar:
+        if len(ventas):
+            calendar[d].append(ventas.pop(0))
+
+best_day = ""
+greatest_sale = 0
+for i in calendar:
+    curr = calendar[i]
+    total_of_day = sum(curr)
+
+    if total_of_day > greatest_sale:
+        greatest_sale = total_of_day
+        best_day = i
+
+print(best_day, greatest_sale)
