@@ -1,5 +1,3 @@
-import re
-
 menu = [
 	{"name": "Ensalada Mixta"		,"price": 12.0,"cty": 0},
 	{"name": "Sopa de Pescado"		,"price": 10.0,"cty": 0},

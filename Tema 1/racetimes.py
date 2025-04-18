@@ -1,5 +1,3 @@
-import json
-
 runners = ["Hanna", "Jackie", "Kimberly"]
 stats = {}
 track_lenght = 100
